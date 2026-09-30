@@ -1110,9 +1110,9 @@ dob = st.date_input(
     ),
     max_value=date.today(),
     value=date(
-        1988,
+        1900,
         12,
-        28
+        12
     )
 )
 
@@ -1120,7 +1120,7 @@ dob = st.date_input(
 birth_time = st.time_input(
     "🕐 Exact Birth Time",
     value=datetime.strptime(
-        "09:20",
+        "12:00",
         "%H:%M"
     ).time()
 )
